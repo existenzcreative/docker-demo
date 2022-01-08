@@ -22,7 +22,7 @@ node {
     
     stage ('K8S Deploy') {
     kubernetesDeploy(
-        configs: 'docker-demo/manifest-v2.yaml',
+        configs: 'manifest-v2.yaml',
         kubeconfigId: 'K8S',
         enableConfigSubstitution: true
         )             
