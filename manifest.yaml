@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: k8s-demo
-    image: jdailama/nodejsdocker-demo
+    image: jdailama/nodejs-docker-demo
     ports:
     - name: nodejs-port
       containerPort: 3000
