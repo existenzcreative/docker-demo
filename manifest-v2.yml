@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels: 
-        app: helloworld  
+        app: nodejs-app  
     spec:                 
       containers: 
       - name: k8s-demo 
@@ -31,5 +31,5 @@ spec:
     targetPort: nodejs-port
     protocol: TCP
   selector:
-    app: helloworld
+    app: nodejs-app
   type: LoadBalancer
