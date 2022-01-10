@@ -13,11 +13,12 @@ spec:
         app: nodejs-app  
     spec:                 
       containers: 
-      - name: k8s-demo 
+      - name: nodejs-docker-demo 
         image: jdailama/nodejs-docker-demo:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 3000
+        - name: nodejs-port
+          containerPort: 3000
 ---
 apiVersion: v1
 kind: Service
